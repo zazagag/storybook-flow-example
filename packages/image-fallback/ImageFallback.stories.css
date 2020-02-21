@@ -1,0 +1,8 @@
+.story {
+  display: flex;
+  align-items: center;
+
+  > div {
+    margin: 0 12px;
+  }
+}

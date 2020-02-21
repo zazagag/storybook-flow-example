@@ -1,0 +1,12 @@
+.idea/
+.vscode/
+node_modules/
+dist/
+jsdocs/
+coverage/
+flow-coverage/
+yarn-error.log
+npm-debug.log
+lerna-debug.log
+package-lock.json
+.DS_Store

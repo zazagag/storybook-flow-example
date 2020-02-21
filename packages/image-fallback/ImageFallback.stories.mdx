@@ -1,0 +1,41 @@
+import { ImageFallback } from './index'
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs'
+import s from './ImageFallback.stories.css'
+
+<Meta
+    title="image-fallback"
+    component={ImageFallback}
+    decorators={[withKnobs]}
+    parameters={{
+      actions: { disabled: true },
+      docs: { disabled: true },
+    }}
+/>
+
+# ImageFallback
+
+`<ImageFallback />`<br/>
+
+
+Image component with fallback to `name` first letter.<br/>
+`large`: 120x120<br/>
+`small`: 24x24
+
+<Preview withToolbar>
+  <Story name="component">
+      <div className={s.story}>
+        <ImageFallback
+          className={text('name', 'Google')}
+          fallbackClassName={text('className', 'fallback-class-name')}
+          src={text('src', 'https://image.flaticon.com/icons/svg/813/813472.svg')}
+          renderFallback={<div>No Image!</div>}
+          name={text('name', 'Google')}
+          large={boolean('large', true)}
+        />
+      </div>
+  </Story>
+</Preview>
+
+### Properties
+<Props of={ImageFallback} />

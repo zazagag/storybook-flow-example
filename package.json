@@ -1,0 +1,40 @@
+{
+	"name": "storybook-flow-example",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"react": "16.12.0",
+		"react-dom": "16.12.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.8.4",
+		"@babel/core": "7.8.4",
+		"@babel/plugin-transform-modules-commonjs": "7.8.3",
+		"@babel/plugin-transform-runtime": "7.8.3",
+		"@babel/preset-env": "7.8.4",
+		"@babel/preset-flow": "7.8.3",
+		"@babel/preset-react": "7.8.3",
+		"@storybook/addon-actions": "^5.3.13",
+		"@storybook/addon-docs": "^5.3.13",
+		"@storybook/addon-knobs": "^5.3.13",
+		"@storybook/addon-links": "^5.3.13",
+		"@storybook/addons": "^5.3.13",
+		"@storybook/react": "^5.3.13",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-add-react-displayname": "^0.0.5",
+		"css-loader": "^3.4.2",
+		"flow-bin": "0.118.0",
+		"postcss-import": "^12.0.1",
+		"postcss-loader": "^3.0.0",
+		"postcss-nested": "^4.2.1",
+		"postcss-preset-env": "^6.7.0",
+		"react-docgen": "^5.2.1",
+		"storybook-addon-react-flow-docgen": "^1.0.3",
+		"style-loader": "^1.1.3"
+	},
+	"scripts": {
+		"start": "start-storybook -p 6006",
+		"build-storybook": "build-storybook"
+	}
+}
